@@ -29,68 +29,130 @@
     <meta property="twitter:image" content="https://geosocio.com/images/social.jpg">
     <link href="./assets/img/thumbnail.jpg" rel="apple-touch-icon">
     <!-- Style sheets -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    
     <!-- script  -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
 
-</head>     
+</head>         
 <body>
-    <section class="bg-cut">
-        <h5>creation and inspiration</h5>
-        <div class="c-logo">
-            <img src="./assets/img/logo.png" alt="Geosocio logo">
-            <h1>GEOSOCIO</h1>
-        </div>
-        <img src="./assets/img/divider-triangle.png" class="divider" style="margin-bottom: -56px;" />
-    </section>
-
-    <section class="mission-vision">
-        <div class="b-fff" style="margin-top: 55px;">
-            <div class="w-400 c-8C8881">
-                <h1>Our <span class="c-000000">mission</span> is to <span class="c-000000">apprize creations of creative minds</span>.</h1>
+    <!-- loading...  -->
+    <div id="loading" class="custom-overlay">
+        <div class="scroll-downs">
+            <div class="mousey">
+                <div class="scroller"></div>
             </div>
-        </div>
-        
-        <div class="b-fff">
-            <div class="w-700 c-8C8881">
-                <h1>Our <span class="c-000000">vision</span> is to <br> <span class="c-000000"> empower people, inspire others in their surroundings with their creation</span>.</h1>
-            </div>
-        </div>
-       
-    </section>
-    <div class="bg-u-0">
-        <img src="./assets/img/divider-triangle-2.png" class="bg-u-0-img" />
+         </div>
     </div>
+    <!-- loading...  -->
 
-    <section class="initiative">
-        <h1 class="initiative-heading">Initiatives</h1>
+    <!-- logo  -->
+    <div>
+        <a class="logo" href="/">
+            <img src="./assets/img/logo.png" alt="Magma logo">
+        </a>
+    </div>
+    <!-- logo  -->
+
+    <!-- express yourself  -->
+    <section class="express-yourself">
+        <div class="text-description bg-t rellax-general" data-rellax-speed="-5">
+            <h1>Our mission is</h1>
+            <h4> to apprize creations of creative minds.</h4>
+        </div>
+        
+    
+    </section>
+    <img class="snap-img rellax-general" data-rellax-speed="1" src="./assets/img/making-hand.jpg" alt="Apprize creations of creative minds">
+    <!-- express yourself  -->
+
+      <!-- Vision  -->
+      <section class="vision d-flex wrap justify-around align-item">
+        <div class="bg-t text">
+            <h1>Our vision is to</h1>
+            <h4>empower people, inspire others in their surroundings with their creation.</h4>
+        </div>
         <div>
-            <a href="http://itsmagma.com">
-                <img style="max-width: 150px" src="./assets/img/magma-logo.png" alt="Magma Logo">
-                <h3>MAGMA</h3>
-            </a>
+            <img class="image" src="./assets/img/empowered-artist.jpg" alt="Take picture of your materpiece">
         </div>
     </section>
+    <!-- Vision  -->
 
-    <img src="./assets/img/divider-triangle-black.png" alt="" style="width: 100%; margin-bottom: -5px;">
-<!-- 
-    <div style="position: relative; height: 55px;">
-        <img style="position: absolute; bottom: 0;" src="./assets/img/divider-triangle-black.png" class="bg-u-0-img" />
-    </div> -->
-    <footer class="b-262624" >
+
+
+
+
+    <!-- map navigation -->
+    <section class="map-nav">
+        <div class="p-relative rellax-general" data-rellax-speed="-1"  style="height: 150px; z-index:1;">
+            <div class="map-nav-quote bg-t text" >
+                    <h1>Initiative</h1>
+                    <h4>Magma is a platform to inspire other in your surroundings with your creations.</h4>
+                    <a style="margin-top: 1em;" href="http://itsmagma.com" class="button">Magma</a>
+            </div>
+        </div>
+        <div class="map-nav-img rellax-general" data-rellax-speed="1">
+            <img src="./assets/img/holding-mobile.jpg" alt="Reach out creative minds in your surroundings">
+        </div>
+    </section>
+        <!-- map navigation  -->
+
+    <!-- download & social accounts -->
+    <section class="download">
+
+        <div class="social-links">
+            <a href="https://Facebook.com/geosocioo/">
+                <img src="./assets/img/facebook.png" alt="Geosocio facebook page">
+            </a>
+            <a href="https://twitter.com/geosocioo">
+                <img src="./assets/img/twitter.png" alt="twitter">
+            </a>
+            <a href="https://instagram.com/geosocioo/">
+                <img src="./assets/img/insta.png" alt="Geosocio instagram profile">
+            </a>
+            <div>
+                <p class="copyright">
+                    <script>document.write(new Date().getFullYear());</script> © <a href="http://geosocio.com">Geosocio</a> 
+                </p>
+            </div>
+        </div>
+
+
         
-        <a href="https://fb.com/geosocioo">
-            <img src="./assets/img/facebook-black.png" alt="Geosocio facebook page">
-        </a>
-        <a href="https://twitter.com/geosocioo">
-            <img src="./assets/img/twitter-icon.png" alt="Geosocio's twitter account">
-        </a>
-        <span class="copyright">
-            <script>document.write(new Date().getFullYear());</script> © Geosocio
-        </span>
-         
-    </footer>
+    </section>
+    <!-- download & social accounts -->
+
+
+
+
+    <script>
+
+        var relaxInspiration = new Rellax('.mobile-mockup', {
+            speed: -5,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+
+          var rellaxExpress = new Rellax('.rellax-general', {
+            // center: true
+            callback: function(position) {
+                // callback every position change
+                // console.log(position);
+            }
+          });
+
+          window.onload = loaded;
+
+          function loaded(){
+            document.getElementById("loading").style.display = "none";
+          }
+
+    </script>
+
 </body>
 </html>
